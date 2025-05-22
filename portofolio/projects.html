@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Owais</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--accent-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  animation: fadeInUp 0.6s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Owais.dev</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <button class="contact-btn"><a href="contact.html">Contact Me</a></button>
+      <button class="theme-switch" id="themeSwitch">Switch Theme</button>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    </nav>
+
+  </header>
+
+  <main>
+    <h1>My Projects</h1>
+    <div class="project-card">
+      <h2>Animated Portfolio</h2>
+      <p>Professional personal site with animations and dark/light themes.</p>
+    </div><br>
+    <div class="project-card">
+      <h2>Recipe Finder</h2>
+      <p>Search meals using filters and Spoonacular API with grid layout.</p>
+    </div><br>
+      <div class="project-card">
+        <h2>Flappy Bird Game</h2>
+        <p>A fully interactive and responsive clone of the classic Flappy Bird game built with JavaScript and HTML Canvas.</p>
+      </div><br>
+  
+      <div class="project-card">
+        <h2>E-Commerce Website</h2>
+        <p>A complete e-commerce frontend with product catalog, cart system, checkout flow, and Stripe integration — all fully animated and responsive.</p>
+      </div><br>
+  
+      <div class="project-card">
+        <h2>BBC Website Clone</h2>
+        <p>A pixel-perfect and responsive clone of the BBC homepage created using HTML, CSS, and modern Flexbox/Grid techniques.</p>
+      </div><br>
+  
+      <div class="project-card">
+        <h2>Library Management System</h2>
+        <p>A Java-based library system for managing books, borrowing, returns, and fine calculations, complete with menus and exception handling.</p>
+      </div><br>
+  
+    
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
